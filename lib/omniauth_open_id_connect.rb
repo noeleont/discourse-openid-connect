@@ -45,7 +45,6 @@ module ::OmniAuth
         discovery_params = {
           authorize_url: "authorization_endpoint",
           token_url: "token_endpoint",
-          site: "issuer",
         }
 
         discovery_params.each do |internal_key, external_key|

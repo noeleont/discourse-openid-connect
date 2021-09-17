@@ -62,6 +62,8 @@ class OpenIDConnectAuthenticator < Auth::ManagedAuthenticator
           nil
         end
 
+    result["issuer"] = "https://login.microsoftonline.com/common/v2.0"
+
     oidc_log("Discovery document loaded from cache") if from_cache
     oidc_log("Discovery document is\n\n#{result.to_yaml}")
 
